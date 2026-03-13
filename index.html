@@ -4,8 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 </head>
 <body>
     <a target="_blank" href="./api/Documentos/ObtenerArchivopath=202693002/DescargarSolicitud.pdf">Ver archivo</a>
+
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+
+    <div id="qrcode"></div>
+
+<script>
+    new QRCode(document.getElementById("qrcode"), {
+        text: "https://sistema-rgae-gob-gt-api-documentos.netlify.app/api/Documentos/ObtenerArchivopath=202693002/DescargarSolicitud.pdf",
+        width: 200,
+        height: 200
+    });
+</script>
 </body>
 </html>
